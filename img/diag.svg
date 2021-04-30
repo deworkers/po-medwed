@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 9055">
+    <g id="diag-group" style="transform: translateY(0px);" data-svg-origin="0 0" transform="translate(0 0)">
+        <polygon class="diag-1" fill="#fff9ed" points="420 0 1360 0 0 1370 0 420"></polygon>
+        <polygon class="diag-2" fill="#fff2e3" points="425 0 1390 0 1920 530 1920 1480"></polygon>
+        <polygon class="diag-4" fill="#fff2e3" points="0 3950 1920 5880 1920 7100 0 5190"></polygon>
+        <polygon class="diag-3" fill="#fff9ed" points="1920 1370 1920 2320 0 4240 0 3290"></polygon>
+        <polygon class="diag-5" fill="#fff9ed" points="1920 6180 1920 7140 0 9055 0 8010"></polygon>
+    </g>
+</svg>

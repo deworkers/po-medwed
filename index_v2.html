@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/main_v2.css">
+    <link rel="stylesheet" href="/css/animation.css">
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/anime.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/main_v2.js"></script>
+    <script src="/js/animation.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrap">
+            <div class="header-logo">
+                <img src="/img/main-logo.png" alt="">
+            </div>
+            <div class="header-right">
+                <div class="header-phone">
+                    <a href="tel:73432161630">+7 (343)216-16-30</a>
+                </div>
+                <div class="header-button">
+                    <span>Получить расчет</span>
+                </div>
+                <div class="header-menu">
+                    <div class="header-menu-open"></div>
+                    <div class="header-menu-block">
+                        <div class="header-menu-close"></div>
+                        <div class="header-menu-list">
+                            <div class="header-menu-one mark"><a href="#">О нас</a></div>
+                            <div class="header-menu-one mark"><a href="#">Решения</a></div>
+                            <div class="header-menu-one"><a href="#">Проекты</a></div>
+                            <div class="header-menu-one"><a href="#">Контакты</a></div>
+                        </div>
+                        <div class="header-phone header-phone--mobile">
+                            <a href="tel:73432161630">+7 (343)216-16-30</a>
+                        </div>
+                        <div class="header-button header-button--mobile">
+                            <span>Получить расчет</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-body">
+            <div class="modal-close"></div>
+            <div class="modal-title">Получить расчет</div>
+            <div class="modal-subtitle">Оставьте заявку на бесплатную консультацию<br>от наших экспертов прямо сейчас!</div>
+            <div class="modal-form">
+                <form action="" id="modal-form">
+                    <div class="modal-line">
+                        <input type="text" name="name" placeholder="ФИО">
+                    </div>
+                    <div class="modal-line">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="modal-line">
+                        <input type="text" name="phone" placeholder="Телефон">
+                    </div>
+                    <div class="modal-line">
+                        <input type="text" name="company" placeholder="Организация">
+                    </div>
+                    <div class="modal-line">
+                        <textarea name="message" placeholder="Сообщение"></textarea>
+                    </div>
+                    <div class="modal-line">
+                        <button type="submit">заказать консультацию</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-line--text">
+                Нажимая отправить я соглашаюсь с политикой работы с <a href="#">персональными данными</a>
+            </div>
+            <div class="modal-line--text">
+                Защита от спама reCAPTCHA <a href="#">Конфиденциальность</a> и <a href="#">Условия использования</a>
+            </div>
+        </div>
+        <div class="modal-body modal-body--after">
+            <div class="modal-close"></div>
+            <div class="modal-title">Спасибо за заявку</div>
+            <div class="modal-subtitle">В ближайшее время с вами свяжется наш эксперт и проведет  бесплатную консультацию!</div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="navigation-wrap">
+            <a href="#about" class="navigation-one active"></a>
+            <a href="#services" class="navigation-one"></a>
+            <a href="#steps" class="navigation-one"></a>
+            <a href="#review" class="navigation-one"></a>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about-wrap" id="about">
+            <div class="about-title">Информационная система «Медведь»</div>
+            <div class="about-subtitle">С 2002 года мы разрабатываем технологические решения, повышающие результаты работы госучреждений по всей стране</div>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-left-title">Решения для организаций</div>
+                    <a href="#" class="about-left-button" style="width: 300px;">
+                        <span>Здравоохранение</span>
+                    </a>
+                    <a href="#" class="about-left-button">
+                        <span>Строительство</span>
+                    </a>
+                    <a href="#" class="about-left-button">
+                        <span>Культура</span>
+                    </a>
+                </div>
+                <div class="about-animation">
+                    <div class="animation-computer zoomIn">
+                        <img src="/img/icons/computer.png" alt="">
+                    </div>
+                    <svg id="animation-canvas"  viewBox="0 0 600 600">
+                        <circle 
+                            class="circle-1" cx="290" cy="290"  r="290" 
+                            stroke-dashoffset="910" stroke-dasharray="930"
+                            transform="rotate(145 288 289)"
+                            style="stroke-width:1px; paint-order: stroke;"></circle>
+                        <circle
+                            class="circle-2" cx="290" cy="290"  r="290" 
+                            transform="rotate(180 290 289)"
+                            stroke-dashoffset="1050" stroke-dasharray="1500"
+                            style="stroke-width:1px; paint-order: stroke;"></circle>
+                        <circle
+                            class="circle-3" cx="290" cy="290"  r="237" 
+                            transform="rotate(-70 290 289)"
+                            stroke-dashoffset="390" stroke-dasharray="1600"
+                            style="stroke-width:1px; paint-order: stroke;"></circle>
+                        <circle
+                            class="dot dot-1" cx="0" cy="0"  r="7" 
+                            style="stroke-width:1px; paint-order: stroke;"></circle>
+                        <circle
+                            class="dot dot-2" cx="0" cy="0"  r="7" 
+                            style="stroke-width:1px; paint-order: stroke;"></circle>
+                        <circle
+                            class="dot dot-3" cx="0" cy="0"  r="7" 
+                            style="stroke-width:1px; paint-order: stroke;"></circle>
+                        <circle
+                            class="dot dot-4" cx="0" cy="0"  r="7" 
+                            style="stroke-width:1px; paint-order: stroke;"></circle>
+                        <circle
+                            class="dot dot-5" cx="0" cy="0"  r="7" 
+                            style="stroke-width:1px; paint-order: stroke;"></circle>
+                    </svg>
+                    <div class="animation-icons">
+                        <div class="animation-icon zoomIn animation-icon--conversation"></div>
+                        <div class="animation-icon zoomIn animation-icon--calendar"></div>
+                        <div class="animation-icon zoomIn animation-icon--electrocardiogram"></div>
+                        <div class="animation-icon zoomIn animation-icon--medical-folder"></div>
+                        <div class="animation-icon zoomIn animation-icon--statistics"></div>
+                        <div class="animation-icon zoomIn animation-icon--medical-app"></div>
+                        <div class="animation-icon zoomIn animation-icon--hospital"></div>
+                    </div>
+                    <div class="animation-titles">
+                        <div class="animation-title fadeIn animation-title--1">Объединяем ИТ-сервисы в единую систему</div>
+                        <div class="animation-title fadeIn animation-title--2">Экономим ваше время на подготовку отчетности</div>
+                        <div class="animation-title fadeIn animation-title--3">Автоматизируем сбор и анализ данных</div>
+                        <div class="animation-title fadeIn animation-title--4">Обеспечиваем безопасный информационный обмен</div>
+                        <div class="animation-title fadeIn animation-title--5">Поддерживаем пользователей в режиме 24/7</div>
+                        <div class="animation-title fadeIn animation-title--6">Интеграция с федеральными системами и сервисами</div>
+                    </div>
+                    <div class="animation-men slideLeft">
+                        <img src="/img/icons/men.png" alt="">
+                    </div>
+                    <div class="animation-gears slideRight">
+                        <img src="/img/icons/gears.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="services-wrap" id="services">
+            <div class="services-title">Наши сервисы помогут:</div>
+            <div class="services-icons">
+                <div class="swiper-wrapper">
+                    <div class=" swiper-slide services-icon wow fadeIn">
+                        <div class="services-icon__img">
+                            <img src="/img/services-1.png" alt="">
+                        </div>
+                        <div class="services-icon__title">Автоматизировать сбор и хранение данных из разных информационных систем</div>
+                    </div>
+                    <div class=" swiper-slide services-icon wow fadeIn">
+                        <div class="services-icon__img">
+                            <img src="/img/services-2.png" alt="">
+                        </div>
+                        <div class="services-icon__title">Преобразовать разрозненные цифры в наглядные таблицы и графики для их удобного анализа</div>
+                    </div>
+                    <div class=" swiper-slide services-icon wow fadeIn">
+                        <div class="services-icon__img">
+                            <img src="/img/services-3.png" alt="">
+                        </div>
+                        <div class="services-icon__title">Безопасно обмениваться данными внутри организации и с подведомственными учреждениями</div>
+                    </div>
+                    <div class=" swiper-slide services-icon wow fadeIn">
+                        <div class="services-icon__img">
+                            <img src="/img/services-4.png" alt="">
+                        </div>
+                        <div class="services-icon__title">Создавать отчеты о работе организаций с любой периодичностью</div>
+                    </div>
+                    <div class=" swiper-slide services-icon wow fadeIn">
+                        <div class="services-icon__img">
+                            <img src="/img/services-5.png" alt="">
+                        </div>
+                        <div class="services-icon__title">Объединить разрозненные ИТ-системы в единое информационное пространство</div>
+                    </div>
+                </div>
+                <div class="services-button-prev"></div>
+                <div class="services-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="steps"  id="steps">
+        <div class="steps-wrap">
+            <div class="steps-title">Подход к работе: </div>
+            <div class="steps-icons">
+                <div class="steps-icon">
+                    <div class="steps-icon__top">Шаг 1</div>
+                    <div class="steps-icon__img">
+                        <img src="/img/step-1.png" alt="">
+                    </div>
+                    <div class="steps-icon__title">Аудит</div>
+                    <div class="steps-icon__descr">Анализируем вашу ИТ-инфраструктуру, действующие бизнес-процессы и принятые форматы обмена данными. Обычно это происходит в форме интервью или анкеты</div>
+                </div>
+                <div class="steps-icon">
+                    <div class="steps-icon__top">Шаг 2</div>
+                    <div class="steps-icon__img">
+                        <img src="/img/step-2.png" alt="">
+                    </div>
+                    <div class="steps-icon__title">Техническое задание</div>
+                    <div class="steps-icon__descr">Наши аналитики и инженеры разрабатывают архитектуру будущей системы, учитывая все ваши пожелания и особенности проекта</div>
+                </div>
+                <div class="steps-icon">
+                    <div class="steps-icon__top">Шаг 3</div>
+                    <div class="steps-icon__img">
+                        <img src="/img/step-3.png" alt="">
+                    </div>
+                    <div class="steps-icon__title">Пилотный проект </div>
+                    <div class="steps-icon__descr">На продуктовом сервере заказчика мы моделируем будущую IT-среду. Проводим тестирование и проверяем эффективность работы будущей системы</div>
+                </div>
+
+                <div class="steps-icon">
+                    <div class="steps-icon__top">Шаг 4</div>
+                    <div class="steps-icon__img">
+                        <img src="/img/step-4.png" alt="">
+                    </div>
+                    <div class="steps-icon__title">Внедрение</div>
+                    <div class="steps-icon__descr">Идет в соответствии с техническим заданием. Мы проходим сотни тестов и аттестаций, чтобы предложить лучшее решение и снизить риски при его внедрении</div>
+                </div>
+                <div class="steps-icon">
+                    <div class="steps-icon__top">Шаг 5</div>
+                    <div class="steps-icon__img">
+                        <img src="/img/step-5.png" alt="">
+                    </div>
+                    <div class="steps-icon__title">Обучение</div>
+                    <div class="steps-icon__descr">Наши специалисты ежегодно проводят сотни выездных сессий и онлайн-встреч, обучая новых пользователей работе с сервисами «Медведь»</div>
+                </div>
+                <div class="steps-icon">
+                    <div class="steps-icon__top">Шаг 6</div>
+                    <div class="steps-icon__img">
+                        <img src="/img/step-6.png" alt="">
+                    </div>
+                    <div class="steps-icon__title">Сопровождение </div>
+                    <div class="steps-icon__descr">Единая онлайн-поддержка оперативно отвечает на вопросы вне зависимости от места расположения вашей организации</div>
+                </div>
+            </div>
+            <div class="steps-line">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <path class="path" style="
+                    fill: rgb(216, 216, 216); 
+                    paint-order: stroke; 
+                    fill-opacity: 0; 
+                    stroke-width: 4px; 
+                    stroke: rgb(1, 170, 255); 
+                    stroke-linejoin: round; 
+                    stroke-linecap: round;" 
+                    d="M 379.081 62.019 L 60.797 62.019 C 60.797 62.019 12.215 65.141 12.215 119.043 C 12.215 161.785 41.272 179.587 63.36 179.587 C 88.364 179.587 440.694 179.586 440.694 179.586 C 440.694 179.586 491.86 183.673 491.86 233.024 C 491.86 280.997 445.241 286.747 445.241 286.747 C 445.241 286.747 63.359 287.071 63.034 287.071 C 63.034 287.071 12.249 288.561 12.249 344.352 C 12.249 402.216 59.463 404.804 59.463 404.804 L 376.398 404.154"/>
+                </svg>
+            </div>
+            <div class="steps-line-alt">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="path-alt"  style="fill: rgb(216, 216, 216); 
+                        paint-order: stroke; 
+                        fill-opacity: 0; 
+                        stroke-width: 4px; 
+                        stroke: rgb(1, 170, 255); 
+                        stroke-linejoin: round; 
+                        stroke-linecap: round;" 
+                        d="M 422.615 54.432 L 106.306 54.432 C 89.731 54.432 46.763 70.499 46.763 117.735 L 46.948 139.801 C 46.948 178.216 84.758 197.414 106.922 197.414 L 355.137 197.414 C 395.953 196.882 416.204 230.845 416.313 258.415 L 416.313 271.752 C 416.313 295.927 389.566 328.086 356.153 328.086 C 356.153 328.086 118.588 327.554 108.259 327.554 C 78.056 327.554 46.763 357.711 46.763 386.486 L 46.763 417.43 C 46.763 446.445 83.752 470.709 100.047 470.709 L 420.897 470.709"/>
+                      </svg>
+                </svg>
+            </div>
+            <div class="steps-line-mobile"></div>
+        </div>
+    </div>
+
+    <div class="review" id="review">
+        <div class="review-wrap">
+            <div class="review-title">Нам доверяют</div>
+            <div class="review-items">
+                <div class="swiper-wrapper">
+                    <div class="rewiew-item swiper-slide">
+                        <div class="rewiew-item__text">Мы искали простой и быстрый способ перейти на новую схему работы. После анализа и тестирования различных предложений, мы выбрали систему сбора отчетности «Медведь» Группы Компаний ХОСТ. Компания предоставила бесплатный облачный доступ к системе и обеспечила ее квалифицированное сопровождение. Уже в результате пилотного проекта мы решили первоочередные задачи по сбору отчетности и убедились в удобстве использования системы</div>
+                        <div class="rewiew-item__name">Людмила Степановна Шеремет,</div>
+                        <div class="rewiew-item__descr">Главный врач центра медстатистики МИАЛЦ города Севастополь</div>
+                    </div>
+                    <div class="rewiew-item swiper-slide">
+                        <div class="rewiew-item__text">Рекомендуем разработчиков информационной системы «Медведь» как высококвалифицированных, надежных и компетентных партнеров</div>
+                        <div class="rewiew-item__name">Аида Викторовна Коростелева, </div>
+                        <div class="rewiew-item__descr">директор ЯРМИАЦ</div>
+                    </div>
+                    <div class="rewiew-item swiper-slide">
+                        <div class="rewiew-item__text">Благодарим ГК ХОСТ за внедрение сервиса «Медведь.Телемед» в Тюменской области. С его помощью мы провели более 5800 телемедицинских и информационных консультаций, что помогло снизить нагрузку на медицинские организации и врачей региона и оказать своевременную помощь пациентам и их детям</div>
+                        <div class="rewiew-item__name">Андрей Викторович Ивашинников,</div>
+                        <div class="rewiew-item__descr">директор ГАУ ТО «МИАЦ»</div>
+                    </div>
+                </div>
+                <div class="review-button-prev"></div>
+                <div class="review-button-next"></div>
+            </div>
+            
+            <div class="rewiew-logos-wrap">
+                <div class="rewiew-logos">
+                    <div class="swiper-wrapper">
+                        <div class="rewiew-logo swiper-slide">
+                            <img src="/img/logos/logo-1-cl.png" alt="">
+                        </div>
+                        <div class="rewiew-logo swiper-slide">
+                            <img src="/img/logos/logo-2-cl.png" alt="">
+                        </div>
+                        <div class="rewiew-logo swiper-slide">
+                            <img src="/img/logos/logo-3-cl.png" alt="">
+                        </div>
+                        <div class="rewiew-logo swiper-slide">
+                            <img src="/img/logos/logo-4-cl.png" alt="">
+                        </div>
+                        <div class="rewiew-logo swiper-slide">
+                            <img src="/img/logos/logo-5-cl.png" alt="">
+                        </div>
+                        <div class="rewiew-logo swiper-slide">
+                            <img src="/img/logos/logo-6-cl.png" alt="">
+                        </div>
+                    </div>  
+                </div>
+                
+                <div class="logos-button-prev"></div>
+                <div class="logos-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="bottom-wrap">
+            <div class="bottom-title">Есть вопросы?</div>
+            <div class="bottom-sutitle">Оставьте заявку на бесплатную консультацию от наших экспертов прямо сейчас! </div>
+            <div class="bottom-form">
+                <form action="" id="bottom-form">
+                    <div class="bottom-form-bg">
+                        <input class="bottom-form__input" type="text" name="phone" placeholder="Телефон">
+                        <button class="bottom-form__button">заказать консультацию</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom-wrap bottom-wrap--after">
+            <div class="bottom-title">Спасибо за заявку</div>
+            <div class="bottom-sutitle">В ближайшее время с вами свяжется наш эксперт и проведет  бесплатную консультацию! </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-wrap">
+            <div class="footer-menu">
+                <div class="footer-menu-inner">
+                    <div class="footer-menu-one mark"><a href="#">О нас</a></div>
+                    <div class="footer-menu-one mark"><a href="#">Решения</a></div>
+                    <div class="footer-menu-one"><a href="#">Проекты</a></div>
+                    <div class="footer-menu-one"><a href="#">Контакты</a></div>
+                    <div class="footer-menu-one"><a href="#">Документация</a></div>
+                    <div class="footer-menu-one"><a href="#">Персональные данные</a></div>
+                </div>
+                    
+            </div>
+            <div class="footer-block">
+                <div class="footer-logo">
+                    <img src="/img/main-logo.png" alt="">
+                </div>
+                <div class="footer-right">
+                    <div class="footer-phone footer-block-one">
+                        <a href="tel:73432161630">+7 (343)216-16-30</a>
+                    </div>
+                    <div class="footer-place footer-block-one">
+                        <span>Адрес г. Екатеринбург,<br>
+                        ул. Энгельса, 36</span>
+                    </div>
+                    <div class="footer-email footer-block-one">
+                        <a href="">medved@hostco.ru</a>
+                    </div>
+                    <div class="footer-time footer-block-one">
+                        <span>Служба сопровождения:<br>
+                        с 8:00 до 17:00 по МСК</span>
+                    </div>    
+                </div>
+                
+            </div>
+            <div class="footer-rigth">
+                © Медведь. Все права защищены
+            </div>
+        </div>
+    </div>
+
+    <div class="diag">
+        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 5100">
+            <g id="diag-group" style="" data-svg-origin="0 0" transform="translate(0 0)">
+                <polygon class="diag-1" fill="#fff9ed" points="420 0 1360 0 0 1370 0 420"></polygon>
+                <polygon class="diag-2" fill="#fff2e3" points="425 0 1390 0 1920 530 1920 1480"></polygon>
+                <polygon class="diag-4" fill="#fff2e3" points="0 3950 1920 5880 1920 7100 0 5190"></polygon>
+                <polygon class="diag-3" fill="#fff9ed" points="1920 1370 1920 2320 0 4240 0 3290"></polygon>
+                <polygon class="diag-5" fill="#fff9ed" points="1920 6180 1920 7140 0 9055 0 8010"></polygon>
+            </g>
+        </svg> -->
+    </div>
+
+</body>
+</html>

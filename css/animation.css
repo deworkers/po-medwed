@@ -1,0 +1,309 @@
+.about-animation {
+	width: 870px;
+    height: 650px;
+    position: relative;
+    /*background: url('/img/animaion.png') no-repeat;*/
+    background-position: center;
+    margin: 0 auto;
+    transform: scale(0.8);
+}
+
+@media only screen and (max-width: 1280px) {
+    .about-animation {
+        transform: scale(0.65);
+        left: -60px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-animation {
+        transform: scale(0.45);
+        left: -90px;
+    }
+}
+
+
+.about-animation img {
+    max-width: auto;
+}
+
+.animation-computer {
+	position: absolute;
+    top: 56px;
+    left: 194px;
+    display: none;
+    width: 478px;
+    height: 503px;
+    z-index: 1;
+}
+
+.animation-computer img {
+    max-width: 150%;
+}
+
+.animation-icons {
+	
+}
+
+.animation-icon {
+	width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2c70ec;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+
+.animation-icon--conversation {
+	background: url('/img/icons/conversation.png') no-repeat #fff;
+    background-position: 50% 50%;
+    top: 131px;
+    left: 572px;
+}
+
+.animation-icon--calendar {
+	background: url('/img/icons/calendar.png') no-repeat #fff;
+    background-position: 50% 50%;
+    top: 297px;
+    left: 693px;
+}
+
+.animation-icon--electrocardiogram {
+	background: url('/img/icons/electrocardiogram.png') no-repeat #fff;
+    background-position: 50% 50%;
+    top: 463px;
+    left: 571px;
+}
+
+.animation-icon--medical-folder {
+	background: url('/img/icons/medical-folder.png') no-repeat #fff;
+    background-position: 50% 50%;
+    top: 463px;
+    left: 238px;
+}
+
+.animation-icon--statistics {
+	background: url('/img/icons/statistics.png') no-repeat #fff;
+    background-position: 50% 50%;
+    top: 296px;
+    left: 119px;
+}
+
+.animation-icon--medical-app {
+	background: url('/img/icons/medical-app.png') no-repeat #fff;
+    background-position: 50% 50%;
+    top: 129px;
+    left: 240px;
+}
+
+.animation-icon--hospital {
+	background: url('/img/icons/hospital.png') no-repeat #fff;
+    background-position: 50% 50%;
+    top: 7px;
+    left: 402px;
+}
+
+.animation-titles {
+	
+}
+
+.animation-title {
+	font-size: 14px;
+    color: #656d8d;
+    line-height: 19px;
+    font-weight: 600;
+    position: absolute;
+    display: none;
+}
+
+.animation-title--1 {
+    top: 140px;
+    left: 657px;
+    width: 200px;
+}
+
+.animation-title--2 {
+	top: 313px;
+    left: 780px;
+    width: 200px;
+}
+
+.animation-title--3 {
+	top: 531px;
+    left: 657px;
+    width: 200px;
+}
+
+.animation-title--4 {
+	top: 531px;
+    left: 11px;
+    width: 210px;
+    text-align: right;
+}
+
+.animation-title--5 {
+    top: 302px;
+    left: -95px;
+    width: 190px;
+    text-align: right;
+}
+
+.animation-title--6 {
+    text-align: right;
+    top: 140px;
+    left: -30px;
+    width: 200px;
+}
+
+.animation-men {
+	position: absolute;
+    top: 403px;
+    left: -50px;
+    width: 148px;
+    height: 244px;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.animation-men.show {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.animation-gears {
+	position: absolute;
+    top: 19px;
+    left: 515px;
+    opacity: 0;
+    transform: translateX(50px);
+    width: 122px;
+    height: 57px;
+}
+
+.animation-gears.show {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+#animation-canvas {
+    position: absolute;
+    top: 38px;
+    left: 150px;
+    width: 600px;
+    height: 600px;
+}
+
+#animation-canvas .circle-1 {
+    fill-opacity: 0;
+	stroke: #b1bdec;
+    stroke-dashoffset: 1830;
+    stroke-dasharray: 1830;
+    transform: rotate(-26deg);
+    transform-origin: 282px 298px;
+}
+
+#animation-canvas .circle-2 {
+    fill-opacity: 0;
+	stroke: #b1bdec;
+    stroke-dashoffset: 1830;
+    stroke-dasharray: 1830;
+}
+
+#animation-canvas .circle-3 {
+    fill-opacity: 0;
+	stroke: #b1bdec;
+    stroke-dashoffset: 1830;
+    stroke-dasharray: 1830;
+}
+
+#animation-canvas .dot {
+    fill: #b1bdec;
+    display: none;
+}
+
+#animation-canvas .dot-1 {
+    transform: translate(543px, 155px);
+}
+
+#animation-canvas .dot-2 {
+    transform: translate(375px, 68px);
+}
+
+#animation-canvas .dot-3 {
+    transform: translate(420px, 545px);
+}
+
+#animation-canvas .dot-4 {
+    transform: translate(30px, 160px);
+}
+
+#animation-canvas .dot-5 {
+    transform: translate(40px, 444px);
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+}
+
+.zoomIn {
+    animation: zoomIn 1s;
+}
+
+
+.slideLeft {
+    animation: slideLeft 1s;
+    animation-delay: 3s;
+}
+
+.slideRight {
+    animation: slideRight 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

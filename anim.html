@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animation.css">
+</head>
+<body>
+    <div class="about-animation">
+        <div class="animation-computer zoomIn">
+            <img src="/img/icons/computer.png" alt="">
+        </div>
+        <svg id="animation-canvas"  viewBox="0 0 600 600">
+            <circle 
+                class="circle-1" cx="290" cy="290"  r="290" 
+                stroke-dashoffset="910" stroke-dasharray="930"
+                transform="rotate(145 288 289)"
+                style="stroke-width:1px; paint-order: stroke;"></circle>
+            <circle
+                class="circle-2" cx="290" cy="290"  r="290" 
+                transform="rotate(180 290 289)"
+                stroke-dashoffset="1050" stroke-dasharray="1500"
+                style="stroke-width:1px; paint-order: stroke;"></circle>
+            <circle
+                class="circle-3" cx="290" cy="290"  r="237" 
+                transform="rotate(-70 290 289)"
+                stroke-dashoffset="390" stroke-dasharray="1600"
+                style="stroke-width:1px; paint-order: stroke;"></circle>
+            <circle
+                class="dot dot-1" cx="0" cy="0"  r="7" 
+                style="stroke-width:1px; paint-order: stroke;"></circle>
+            <circle
+                class="dot dot-2" cx="0" cy="0"  r="7" 
+                style="stroke-width:1px; paint-order: stroke;"></circle>
+            <circle
+                class="dot dot-3" cx="0" cy="0"  r="7" 
+                style="stroke-width:1px; paint-order: stroke;"></circle>
+            <circle
+                class="dot dot-4" cx="0" cy="0"  r="7" 
+                style="stroke-width:1px; paint-order: stroke;"></circle>
+            <circle
+                class="dot dot-5" cx="0" cy="0"  r="7" 
+                style="stroke-width:1px; paint-order: stroke;"></circle>
+        </svg>
+        <div class="animation-icons">
+            <div class="animation-icon zoomIn animation-icon--conversation"></div>
+            <div class="animation-icon zoomIn animation-icon--calendar"></div>
+            <div class="animation-icon zoomIn animation-icon--electrocardiogram"></div>
+            <div class="animation-icon zoomIn animation-icon--medical-folder"></div>
+            <div class="animation-icon zoomIn animation-icon--statistics"></div>
+            <div class="animation-icon zoomIn animation-icon--medical-app"></div>
+            <div class="animation-icon zoomIn animation-icon--hospital"></div>
+        </div>
+        <div class="animation-titles">
+            <div class="animation-title fadeIn animation-title--1">Объединяем ИТ-сервисы в единую систему</div>
+            <div class="animation-title fadeIn animation-title--2">Экономим ваше время на подготовку отчетности</div>
+            <div class="animation-title fadeIn animation-title--3">Автоматизируем сбор и анализ данных</div>
+            <div class="animation-title fadeIn animation-title--4">Обеспечиваем безопасный информационный обмен</div>
+            <div class="animation-title fadeIn animation-title--5">Поддерживаем пользователей в режиме 24/7</div>
+            <div class="animation-title fadeIn animation-title--6">Интеграция с федеральными системами и сервисами</div>
+        </div>
+        <div class="animation-men slideLeft">
+            <img src="/img/icons/men.png" alt="">
+        </div>
+        <div class="animation-gears slideRight">
+            <img src="/img/icons/gears.png" alt="">
+        </div>
+    </div>
+
+    <script src="/js/anime.min.js"></script>
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/animation.js"></script>
+</body>
+</html>

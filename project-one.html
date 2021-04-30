@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/main_v2.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="/css/inner.css">
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/common.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrap">
+            <div class="header-logo">
+                <img src="/img/main-logo.png" alt="">
+            </div>
+            <div class="header-right">
+                <div class="header-phone">
+                    <a href="tel:73432161630">+7 (343)216-16-30</a>
+                </div>
+                <div class="header-button">
+                    <span>Получить расчет</span>
+                </div>
+                <div class="header-menu">
+                    <div class="header-menu-open"></div>
+                    <div class="header-menu-block">
+                        <div class="header-menu-close"></div>
+                        <div class="header-menu-list">
+                            <div class="header-menu-one mark"><a href="#">О нас</a></div>
+                            <div class="header-menu-one mark"><a href="#">Решения</a></div>
+                            <div class="header-menu-one"><a href="#">Проекты</a></div>
+                            <div class="header-menu-one"><a href="#">Контакты</a></div>
+                        </div>
+                        <div class="header-phone header-phone--mobile">
+                            <a href="tel:73432161630">+7 (343)216-16-30</a>
+                        </div>
+                        <div class="header-button header-button--mobile">
+                            <span>Получить расчет</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-body">
+            <div class="modal-close"></div>
+            <div class="modal-title">Получить расчет</div>
+            <div class="modal-subtitle">Оставьте заявку на бесплатную консультацию<br>от наших экспертов прямо сейчас!</div>
+            <div class="modal-form">
+                <form action="" id="modal-form">
+                    <div class="modal-line">
+                        <input type="text" name="name" placeholder="ФИО">
+                    </div>
+                    <div class="modal-line">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="modal-line">
+                        <input type="text" name="phone" placeholder="Телефон">
+                    </div>
+                    <div class="modal-line">
+                        <input type="text" name="company" placeholder="Организация">
+                    </div>
+                    <div class="modal-line">
+                        <textarea name="message" placeholder="Сообщение"></textarea>
+                    </div>
+                    <div class="modal-line">
+                        <button type="submit">заказать консультацию</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-line--text">
+                Нажимая отправить я соглашаюсь с политикой работы с <a href="#">персональными данными</a>
+            </div>
+            <div class="modal-line--text">
+                Защита от спама reCAPTCHA <a href="#">Конфиденциальность</a> и <a href="#">Условия использования</a>
+            </div>
+        </div>
+        <div class="modal-body modal-body--after">
+            <div class="modal-close"></div>
+            <div class="modal-title">Спасибо за заявку</div>
+            <div class="modal-subtitle">В ближайшее время с вами свяжется наш эксперт и проведет  бесплатную консультацию!</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <span></span>
+            <a href="#">Проекты</a>
+            <span></span>
+            <div class="#">Интеграционная шина системы здравоохранения в Ханты-Мансийском автономном округе — Югра</div>
+        </div>
+        <h1 class="content-title">Интеграционная шина системы здравоохранения в Ханты-Мансийском автономном округе — Югра</h1>
+
+        <div class="project-about">
+            <div class="project-about-line">
+                <div class="project-about-line__icon">
+                    <img src="/img/inner/svg/location.svg" alt="">
+                </div>
+                <div class="project-about-line__title">Регион:</div>
+                <div class="project-about-line__text">Ханты-Мансийский автономный округ - Югра.</div>
+            </div>
+            <div class="project-about-line">
+                <div class="project-about-line__icon">
+                    <img src="/img/inner/svg/user.svg" alt="">
+                </div>
+                <div class="project-about-line__title">Заказчик:</div>
+                <div class="project-about-line__text">Медицинский информационно-аналитический центр ХМАО- Югры.</div>
+            </div>
+            <div class="project-about-line">
+                <div class="project-about-line__icon">
+                    <img src="/img/inner/svg/blockchain.svg" alt="">
+                </div>
+                <div class="project-about-line__title">Отрасль: </div>
+                <div class="project-about-line__text">Здравоохранение.</div>
+            </div>
+            <div class="project-about-line">
+                <div class="project-about-line__icon">
+                    <img src="/img/inner/svg/mountain.svg" alt="">
+                </div>
+                <div class="project-about-line__title">Цель:</div>
+                <div class="project-about-line__text">Создать единое информационное пространство, объединяющее ранее созданные региональные медицинские сервисы и системы.</div>
+            </div>
+        </div>
+
+        <h2>Ситуация до начала работ:</h2>
+        <p>Раньше отчетно-аналитическая информация по здравоохранению региона хранилась разрознено. Недели уходили на ее сбор от медучреждений, еще столько же на унификацию документов и их анализ. Из-за этого у Департамента здравоохранения ХМАО-Югры регулярно возникали трудности с получением актуальных данных, что тормозило принятие управленческих решений и планирование текущих расходов.</p>
+        <p>Кроме того, все медицинские системы региона работали автономно. Их требовалось объединить с федеральными и региональными сервисами для передачи данных в ФЭР, ИЭМК, ФРЭМД. Заказчику требовалось ПО, обеспечивающее централизованный и унифицированный обмен между информационными системами для быстрого получения информации учреждениями федерального и регионального уровня.</p>
+        
+        <h2>Требования к проекту:</h2>
+        <div class="requests">
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/folder.svg" alt="">
+                </div>
+                <div class="request-one__text">Разработать ПО интеграционные шины здравоохранения (ИШЗ)</div>
+            </div>
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/update.svg" alt="">
+                </div>
+                <div class="request-one__text">Обновить подсистемы и модули существующей информационной системы</div>
+            </div>
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/data-transfer.svg" alt="">
+                </div>
+                <div class="request-one__text">Обеспечить сбор и обмен данных без замены действующих систем</div>
+            </div>
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/sharing.svg" alt="">
+                </div>
+                <div class="request-one__text">Интегрировать действующие сервисы в шину</div>
+            </div>
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/analytics.svg" alt="">
+                </div>
+                <div class="request-one__text">Сделать возможным формирование статистики из первичных данных, предоставляемых разными системами</div>
+            </div>
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/folder_2.svg" alt="">
+                </div>
+                <div class="request-one__text">Разработать новые сервисы, клиенты веб-сервисов и адаптеры</div>
+            </div>
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/prototype.svg" alt="">
+                </div>
+                <div class="request-one__text">Интегрировать регион с внешними информационными системами через единую точку входа</div>
+            </div>
+        </div>
+
+        <h2>Решение</h2>
+        <p>Наши специалисты провели анализ целевых данных Заказчика, чтобы выработать новые форматы обмена и взаимодействия между ними. Затем началась разработка основных компонентов ИШЗ. Нами было проведено тестирование. Для этого на продуктовый сервер МИАЦ ХМАО-Югры установили необходимое программное обеспечение и провели инсталляцию подсистем.</p>
+        <p>Работу ИШЗ обеспечивает операционная система CentOS 8, система управления базой данных PostgreSQL, контейнер серверов – Apache Tomcat 8, база сверки данных и функциональные подсистемы:</p>
+        <ul>
+            <li>аналитический блок ИС ИШЗ</li>
+            <li>система ИЭМК</li>
+            <li>система ПУОМП (Б)</li>
+            <li>система Мониторинг</li>
+            <li>система ИПРА</li>
+        </ul>
+        <p>Сетевая инфраструктура ИШЗ представляет собой локальную сеть Заказчика. Внешние подключения организованы в рамках сети VPN (Virtual Private Network) и управляются в соответствии с политикой информационной безопасности Заказчика.</p>
+        <br><br>
+        <div class="solution-functions solution-function--2">
+            <div class="solution-function">
+                <div class="solution-function__icon">
+                    <img src="/img/inner/svg/briefcase.svg" alt="">
+                </div>
+                <div class="solution-function__title">Система позволяет:</div>
+                <div class="solution-function__descr">
+                    <ul>
+                        <li>Обмениваться данными с любыми системами, подключенными с ИШЗ.</li>
+                        <li>Отправлять информацию в ФЭР, ИЭМК, ФРЭМД и Федеральные регистры.</li>
+                        <li>Объединять сервисы и системы в шине вместе, без их модификации.</li>
+                        <li>Подключать новые системы и приложения без изменений.</li>
+                        <li>Проводить мониторинг и контроль за работой служб, сервисов и адаптеров шины.</li>
+                        <li>Визуализировать результаты в графиках и схемах по каждому медучреждению.</li>
+                        <li>Анализировать, валидировать и верифицировать информацию при приеме и передаче по заданным параметрам и алгоритмам.</li>
+                        <li>Быстро менять и перенастраивать параметры и алгоритмы приема данных для каждого сервиса и адаптера шины.</li>
+                        <li>Взаимодействовать с федеральными и региональными шинами: СМЭВ, ТИС.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-function">
+                <div class="solution-function__icon">
+                    <img src="/img/inner/svg/result.svg" alt="">
+                </div>
+                <div class="solution-function__title">Результаты:</div>
+                <div class="solution-function__descr">
+                    <ul>
+                        <li>Создано техническое решение – ИШЗ, позволяющие собирать и обмениваться данными между информационными системами региона. Сейчас им пользуются 85 медучреждений ХМАО-Югры.</li>
+                        <li>Появилась возможность собирать статистику из любых информационных систем.</li>
+                        <li>Обеспечены условия передачи данных в Федеральные регистры. Только в ФРЭМД зарегистрировано уже 1 488 123 медицинских документов, переданных со стороны медучреждений.</li>
+                        <li>Проведена интеграция рабочих сервисов в шину.</li>
+                        <li>Успешно реализовано обновление подсистем и всей действующей системы.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2>Преимущества</h2>
+        <div class="requests requests--3">
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/money.svg" alt="">
+                </div>
+                <div class="request-one__title">Низкая стоимость</div>
+                <div class="request-one__text">Внедрение ИШЗ на 40% дешевле замены информационных систем в регионе для решения задач с унификацией данных.</div>
+            </div>
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/technical-support.svg" alt="">
+                </div>
+                <div class="request-one__title">Кастомизация</div>
+                <div class="request-one__text">Подсистемы ИШЗ меняются и дорабатываются под индивидуальные задачи заказчика.</div>
+            </div>
+            <div class="request-one">
+                <div class="request-one__icon">
+                    <img src="/img/inner/svg/conversation.svg" alt="">
+                </div>
+                <div class="request-one__title">Единая онлайн-поддержка</div>
+                <div class="request-one__text">пользователей, которая отвечает на вопросы по работе с системой в течение всего рабочего дня пользователей вне зависимости от места расположения конкретного учреждения культуры.</div>
+            </div>
+        </div>
+
+        <a href="#" class="project-button">Посмотреть реализованный проект </a>
+    </div>
+
+
+
+    <div class="bottom">
+        <div class="bottom-wrap">
+            <div class="bottom-title">Есть вопросы?</div>
+            <div class="bottom-sutitle">Оставьте заявку на бесплатную консультацию от наших экспертов прямо сейчас! </div>
+            <div class="bottom-form">
+                <form action="" id="bottom-form">
+                    <div class="bottom-form-bg">
+                        <input class="bottom-form__input" type="text" name="phone" placeholder="Телефон">
+                        <button class="bottom-form__button">заказать консультацию</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-wrap bottom-wrap--after">
+                <div class="bottom-title">Спасибо за заявку</div>
+                <div class="bottom-sutitle">В ближайшее время с вами свяжется наш эксперт и проведет  бесплатную консультацию! </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-wrap">
+            <div class="footer-menu">
+                <div class="footer-menu-inner">
+                    <div class="footer-menu-one mark"><a href="#">О нас</a></div>
+                    <div class="footer-menu-one mark"><a href="#">Решения</a></div>
+                    <div class="footer-menu-one"><a href="#">Проекты</a></div>
+                    <div class="footer-menu-one"><a href="#">Контакты</a></div>
+                    <div class="footer-menu-one"><a href="#">Документация</a></div>
+                    <div class="footer-menu-one"><a href="#">Персональные данные</a></div>
+                </div>
+                    
+            </div>
+            <div class="footer-block">
+                <div class="footer-logo">
+                    <img src="/img/main-logo.png" alt="">
+                </div>
+                <div class="footer-right">
+                    <div class="footer-phone footer-block-one">
+                        <a href="tel:73432161630">+7 (343)216-16-30</a>
+                    </div>
+                    <div class="footer-place footer-block-one">
+                        <span>Адрес г. Екатеринбург,<br>
+                        ул. Энгельса, 36</span>
+                    </div>
+                    <div class="footer-email footer-block-one">
+                        <a href="">medved@hostco.ru</a>
+                    </div>
+                    <div class="footer-time footer-block-one">
+                        <span>Служба сопровождения:<br>
+                        с 8:00 до 17:00 по МСК</span>
+                    </div>    
+                </div>
+                
+            </div>
+            <div class="footer-rigth">
+                © Медведь. Все права защищены
+            </div>
+        </div>
+    </div>
+
+    <div class="diag">
+        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 5100">
+            <g id="diag-group" style="" data-svg-origin="0 0" transform="translate(0 0)">
+                <polygon class="diag-1" fill="#fff9ed" points="420 0 1360 0 0 1370 0 420"></polygon>
+                <polygon class="diag-2" fill="#fff2e3" points="425 0 1390 0 1920 530 1920 1480"></polygon>
+                <polygon class="diag-4" fill="#fff2e3" points="0 3950 1920 5880 1920 7100 0 5190"></polygon>
+                <polygon class="diag-3" fill="#fff9ed" points="1920 1370 1920 2320 0 4240 0 3290"></polygon>
+                <polygon class="diag-5" fill="#fff9ed" points="1920 6180 1920 7140 0 9055 0 8010"></polygon>
+            </g>
+        </svg> -->
+    </div>
+
+</body>
+</html>
