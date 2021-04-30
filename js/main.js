@@ -3,16 +3,8 @@ $(document).ready(function() {
     var scroll2 = false;
 
     $(window).scroll(function(){
-        var delta = - $(window).scrollTop() / 2;
-        /*anime({
-            targets: '#diag-group',
-            translateY: delta,
-            easing: 'easeInOutExpo',
-            duration: 3000
-        });*/
-        $('.diag').css('backgroundPosition', 'center ' + delta + 'px');
 
-        if ( $(window).scrollTop() >= 180 ) {
+        if ( $(window).scrollTop() >= 180 ) { 
             $('.navigation').addClass('fixed');
         } else {
             $('.navigation').removeClass('fixed');
