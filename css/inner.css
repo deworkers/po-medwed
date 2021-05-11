@@ -336,7 +336,7 @@ ul li:after {
 
 .project-button:after {
     content: "";
-    background: url('./../img/right.png');
+    background: url('./..../img/right.png');
     width: 22px;
     height: 15px;
     position: absolute;
@@ -403,7 +403,7 @@ ul li:after {
     content: "";
     width: 7px;
     height: 11px;
-    background: url(/img/right-arrow.png);
+    background: url(../img/right-arrow.png);
     position: absolute;
     top: 16px;
     left: 17px;
@@ -427,7 +427,7 @@ ul li:after {
     content: "";
     width: 7px;
     height: 11px;
-    background: url(/img/right-arrow.png);
+    background: url(../img/right-arrow.png);
     position: absolute;
     top: 0;
     transform: rotate(180deg);
@@ -489,7 +489,7 @@ ul li:after {
 
 .partner-one__link:before {
 	content: "";
-    background: url('/img/right-blue.png');
+    background: url('../img/right-blue.png');
     width: 22px;
     height: 15px;
     display: inline-block;

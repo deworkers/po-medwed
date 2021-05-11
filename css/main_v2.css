@@ -34,7 +34,8 @@
 	transform: scale(0.5);
 	width: 32px;
 	height: 32px;
-	background: url(/img/phone.png);
+	background: url(../img/icons/phone-call.svg);
+    background-size: 32px;
 }
 
 .header-phone a {
@@ -80,7 +81,7 @@
 .header-menu-open {
 	width: 45px;
 	height: 23px;
-	background: url('/img/menu-dt.png');
+	background: url('../img/menu-dt.png');
 	cursor: pointer;
 }
 
@@ -96,7 +97,7 @@
 .header-menu-close {
 	width: 23px;
 	height: 23px;
-	background: url('/img/close.png');
+	background: url('../img/close.png');
 	cursor: pointer;
 	position: absolute;
 	top: 48px;
@@ -135,7 +136,7 @@
 	top: -5px;
 	z-index: -1;
 	overflow: hidden;
-    background: url(/img/diag.svg);
+    background: url(../img/diag.svg);
     background-size: 1920px 9060px;
     background-position: center 0;
     transition: all 1.5s;
@@ -192,7 +193,7 @@
 	position: absolute;
 	top: 13px;
     left: 13px;
-	background: url(/img/cross.png);
+	background: url(../img/cross.png);
 }
 
 .modal-title {
@@ -367,11 +368,12 @@
 
 .about-left-button:after {
     content: "";
-    background: url('./../img/right.png');
+    background: url('../img/icons/right.svg');
     width: 22px;
-    height: 15px;
+    background-size: 22px;
+    height: 22px;
     position: absolute;
-    top: 36px;
+    top: 30px;
     right: 25px;
     transform:translateX(150px);
     opacity: 0;
@@ -655,7 +657,7 @@
     height: 30px;
     display: block;
     margin-bottom: 25px;
-    background: url(/img/quotes.png);
+    background: url(../img/quotes.png);
 }
 
 .rewiew-item__name {
@@ -687,7 +689,7 @@
     content: "";
     width: 7px;
     height: 11px;
-    background: url(/img/right-arrow.png);
+    background: url(../img/right-arrow.png);
     position: absolute;
     top: 16px;
     left: 17px;
@@ -711,7 +713,7 @@
     content: "";
     width: 7px;
     height: 11px;
-    background: url(/img/right-arrow.png);
+    background: url(../img/right-arrow.png);
     position: absolute;
     top: 0;
     transform: rotate(180deg);
@@ -766,7 +768,7 @@
     content: "";
     width: 7px;
     height: 11px;
-    background: url(/img/right-arrow.png);
+    background: url(../img/right-arrow.png);
     position: absolute;
     top: 16px;
     left: 17px;
@@ -790,7 +792,7 @@
     content: "";
     width: 7px;
     height: 11px;
-    background: url(/img/right-arrow.png);
+    background: url(../img/right-arrow.png);
     position: absolute;
     top: 0;
     transform: rotate(180deg);
@@ -986,25 +988,29 @@
 .footer-phone:before {
     width: 32px;
     height: 32px;
-    background: url(/img/phone.png);
+    background: url(../img/icons/phone-call.svg);
+    background-size: 32px;
 }
 
 .footer-place:before {
-    width: 24px;
+    width: 32px;
     height: 32px;
-    background: url(/img/place.png);
+    background: url(../img/icons/placeholder.svg);
+    background-size: 32px;
 }
 
 .footer-email:before {
     width: 32px;
-    height: 22px;
-    background: url(/img/mail.png);
+    height: 30px;
+    background: url(../img/icons/mail.svg);
+    background-size: 32px;
 }
 
 .footer-time:before {
     width: 32px;
     height: 32px;
-    background: url(/img/clock.png);
+    background: url(../img/icons/clock.svg);
+    background-size: 32px;
 }
 
 .footer-rigth {
@@ -1476,7 +1482,7 @@
         content: "";
         width: 7px;
         height: 11px;
-        background: url(/img/right-arrow.png);
+        background: url(../img/right-arrow.png);
         position: absolute;
         top: 16px;
         left: 17px;
@@ -1501,7 +1507,7 @@
         content: "";
         width: 7px;
         height: 11px;
-        background: url(/img/right-arrow.png);
+        background: url(../img/right-arrow.png);
         position: absolute;
         top: 0;
         transform: rotate(180deg);

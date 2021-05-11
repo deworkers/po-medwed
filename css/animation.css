@@ -2,7 +2,7 @@
 	width: 870px;
     height: 650px;
     position: relative;
-    /*background: url('/img/animaion.png') no-repeat;*/
+    /*background: url('../img/animaion.png') no-repeat;*/
     background-position: center;
     margin: 0 auto;
     transform: scale(0.8);
@@ -59,52 +59,59 @@
 }
 
 .animation-icon--conversation {
-	background: url('/img/icons/conversation.png') no-repeat #fff;
+	background: url('../img/icons/conversation.svg') no-repeat #fff;
     background-position: 50% 50%;
     top: 131px;
     left: 572px;
+    background-size: 40px;
 }
 
 .animation-icon--calendar {
-	background: url('/img/icons/calendar.png') no-repeat #fff;
+	background: url('../img/icons/calendar.svg') no-repeat #fff;
     background-position: 50% 50%;
     top: 297px;
     left: 693px;
+    background-size: 40px;
 }
 
 .animation-icon--electrocardiogram {
-	background: url('/img/icons/electrocardiogram.png') no-repeat #fff;
+	background: url('../img/icons/electrocardiogram.svg') no-repeat #fff;
     background-position: 50% 50%;
     top: 463px;
     left: 571px;
+    background-size: 40px;
 }
 
 .animation-icon--medical-folder {
-	background: url('/img/icons/medical-folder.png') no-repeat #fff;
+	background: url('../img/icons/medical-folder.svg') no-repeat #fff;
     background-position: 50% 50%;
     top: 463px;
     left: 238px;
+    background-size: 40px;
 }
 
 .animation-icon--statistics {
-	background: url('/img/icons/statistics.png') no-repeat #fff;
+	background: url('../img/icons/statistics.svg') no-repeat #fff;
     background-position: 50% 50%;
     top: 296px;
     left: 119px;
+    background-size: 40px;
 }
 
 .animation-icon--medical-app {
-	background: url('/img/icons/medical-app.png') no-repeat #fff;
+	background: url('../img/icons/medical-app.svg') no-repeat #fff;
     background-position: 50% 50%;
     top: 129px;
     left: 240px;
+    background-size: 40px;
 }
 
 .animation-icon--hospital {
-	background: url('/img/icons/hospital.png') no-repeat #fff;
+	background: url('../img/icons/hospital.svg') no-repeat #fff;
     background-position: 50% 50%;
     top: 7px;
     left: 402px;
+    background-size: 40px;
 }
 
 .animation-titles {

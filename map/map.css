@@ -1,0 +1,88 @@
+.map {
+    position: relative;
+}
+
+.map svg {
+    transform: scale(1.4);
+    height: 750px;
+}
+
+.map .elem {
+    transition: fill 0.3s;
+}
+
+.map .elem:hover {
+    fill: #d3ecff !important;
+}
+
+.map .elem.active {
+    fill: #73c3ff !important;
+}
+
+.map .elem.select {
+    fill: #0091ff !important;
+}
+
+.map-modal {
+	position: absolute;
+    top: 0;
+    width: 50%;
+    background: #fff;
+    padding: 65px 50px;
+    border-radius: 10px;
+    box-shadow: 0 11px 30px rgb(208 208 208 / 50%);
+    display: none;
+}
+
+.map-modal.left {
+    left: 0;
+}
+
+.map-modal.right {
+    right: 0;
+}
+
+.map-modal__close {
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.map-modal__close:after {
+    content: "";
+    width: 18px;
+    height: 3px;
+    background: #60b2f1;
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+.map-modal__close:before {
+    content: "";
+    width: 18px;
+    height: 3px;
+    background: #60b2f1;
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+}
+
+.map-modal__title {
+	font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+}
+
+.map-modal__content li:after {
+	background: #ee861b;
+    left: -18px;
+}
