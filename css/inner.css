@@ -879,3 +879,27 @@ ul li:after {
     font-size: 16px;
     line-height: 24px;
 }
+
+.history-path {
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+    animation: dash 3s linear forwards;
+}
+
+.history-path-2 {
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+    animation: dash 3s linear forwards;
+}
+
+.history-path-3 {
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+    animation: dash 3s linear forwards;
+}
+
+.history-path-4 {
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+    animation: dash 3s linear forwards;
+}
