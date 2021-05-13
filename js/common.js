@@ -95,6 +95,43 @@ $(document).ready(function() {
         },
     });
 
+    $("#bottom-form-alt").validate({
+        errorElement: "em",
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true
+            },
+            phone: {
+                required: true
+            },
+        },
+        messages: {
+            name: {
+                required: "Введите ваше имя",
+            },
+            email: {
+                required: "Введите email",
+            },
+            phone: {
+                required: "Введите номер телефона",
+            },
+        },
+        invalidHandler: function(form, validator) {
+            
+        },
+        submitHandler: function (form) {
+            // отправка
+            $('.bottom-form').hide();
+            $('.bottom-wrap--after').show();
+        },
+        unhighlight: function (form) {
+            
+        },
+    });
+
     const logos = new Swiper('.content-slider', {
         // Optional parameters
         loop: true,
