@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="content--map">
         <div class="breadcrumbs">
             <a href="#">Главная</a>
             <span></span>
@@ -117,6 +117,7 @@
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" 
                 width="1091.9919"
                 height="630.11902" 
+                viewBox="0 0 1091 630"
                 id="svg2" sodipodi:version="0.32" inkscape:version="0.48.0 r9654"
                 sodipodi:docname="Map_of_Russia.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape">
                 <g transform="translate(24.000001,8.0000004)">
@@ -674,16 +675,37 @@
 
     <div class="bottom">
         <div class="bottom-wrap">
-            <div class="bottom-title">Есть вопросы?</div>
-            <div class="bottom-sutitle">Оставьте заявку на бесплатную консультацию от наших экспертов прямо сейчас!
-            </div>
+            <div class="bottom-title">Анкета</div>
+            <div class="bottom-sutitle">Заполните все поля, чтобы подать заявку на партнерство прямо сейчас!</div>
             <div class="bottom-form">
-                <form action="" id="bottom-form">
-                    <div class="bottom-form-bg">
-                        <input class="bottom-form__input" type="text" name="phone" placeholder="Телефон">
-                        <button class="bottom-form__button">заказать консультацию</button>
-                    </div>
-                </form>
+                <div class="bottom-form-alt">
+                    <form action="" id="bottom-form-alt">
+                        <div class="modal-line">
+                            <input type="text" name="name" placeholder="ФИО">
+                        </div>
+                        <div class="modal-line">
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                        <div class="modal-line">
+                            <input type="text" name="phone" placeholder="Телефон">
+                        </div>
+                        <div class="modal-line">
+                            <input type="text" name="company" placeholder="Организация">
+                        </div>
+                        <div class="modal-line modal-line-100">
+                            <textarea name="message" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="modal-line  modal-line-100">
+                            <button type="submit">заказать консультацию</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="bottom-line--text">
+                    Нажимая отправить я соглашаюсь с политикой работы с <a href="#">персональными данными</a>
+                </div>
+                <div class="bottom-line--text">
+                    Защита от спама reCAPTCHA <a href="#">Конфиденциальность</a> и <a href="#">Условия использования</a>
+                </div>
             </div>
             <div class="bottom-wrap bottom-wrap--after">
                 <div class="bottom-title">Спасибо за заявку</div>

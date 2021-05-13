@@ -1,9 +1,18 @@
+body {
+    overflow-x: hidden;
+}
+
 .diag {
     height: 1000px;
 }
 
 .content {
 	max-width: 1170px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.content--map {
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -134,6 +143,15 @@ ul li:after {
 
 .content-title {
 	text-align: center;
+}
+
+.content-subtitle {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 60px;
+    margin-top: -40px;
 }
 
 .solutions {
@@ -665,4 +683,199 @@ ul li:after {
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.bottom-line--text {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.bottom-line--text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.bottom-form-alt {
+    width: 770px;
+    margin: 0 auto 30px;
+}
+
+#bottom-form-alt {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#bottom-form-alt .modal-line {
+    width: calc(50% - 15px);
+    margin-bottom: 20px;
+}
+
+#bottom-form-alt .modal-line-100 {
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+#bottom-form-alt button {
+	display: block;
+	margin: 20px auto 0;
+	width: 270px;
+    height: 60px;
+    border-radius: 35px;
+    background: #ff8500;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.doc {
+    font-size: 16px;
+    display: block;
+    font-weight: 500;
+    position: relative;
+    padding: 15px 0 15px 70px;
+}
+
+.doc span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+}
+
+.doc:hover {
+    text-decoration: none;
+}
+
+.doc--doc::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/docs/doc.svg);
+    background-size: 40px;
+}
+
+.doc--jpg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/docs/jpg.svg);
+    background-size: 40px;
+}
+
+.doc--pdf::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/docs/pdf.svg);
+    background-size: 40px;
+}
+
+.doc--ppt::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/docs/ppt.svg);
+    background-size: 40px;
+}
+
+.doc--txt::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/docs/txt.svg);
+    background-size: 40px;
+}
+
+.doc--xls::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/docs/xls.svg);
+    background-size: 40px;
+}
+
+.doc--png::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../img/docs/png.svg);
+    background-size: 40px;
+}
+
+.history-list-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 90px;
+    position: relative;
+}
+
+.history-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+}
+
+.history-line {
+    width: 1280px;
+    position: absolute;
+    top: 35px;
+    left: -110px;
+    z-index: 0;
+}
+
+.history-one {
+    width: 300px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 11px 43px #d0d0d0;
+    margin-bottom: 120px;
+}
+
+.history-one-year {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.history-one-text {
+    font-size: 16px;
+    line-height: 24px;
 }
