@@ -29,6 +29,10 @@ $(document).ready(function() {
         $('.modal').fadeIn(500);
     });
 
+    $('.bottom-button').on('click', function(event) {
+        $('.modal').fadeIn(500);
+    });
+
     setTimeout(function() {
         $('.diag').css('height', $('body').height() + 5 + 'px');
     }, 500);
@@ -183,25 +187,30 @@ $(document).ready(function() {
         }
     });
 
-    ymaps.ready(function () {
-        var myMap = new ymaps.Map('contacts-map', {
-                center: [56.834033, 60.621783],
-                zoom: 17,
-                controls: []
-            }),
+    try {
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('contacts-map', {
+                    center: [56.834033, 60.621783],
+                    zoom: 17,
+                    controls: []
+                }),
+        
+        
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    
+                }, {
+                    iconCaption: 'улица Энгельса, 36',
+                    iconLayout: 'default#imageWithContent',
+                    iconImageHref: '../img/contacts/map-icon.png',
+                    iconImageSize: [190, 51],
+                    iconImageOffset: [-25, -51]
+                })
+        
+            myMap.geoObjects
+                .add(myPlacemark)
+        });
+    } catch (error) {
+        
+    }
     
-    
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                
-            }, {
-                iconCaption: 'улица Энгельса, 36',
-                iconLayout: 'default#imageWithContent',
-                iconImageHref: '../img/contacts/map-icon.png',
-                iconImageSize: [190, 51],
-                iconImageOffset: [-25, -51]
-            })
-    
-        myMap.geoObjects
-            .add(myPlacemark)
-    });
 });

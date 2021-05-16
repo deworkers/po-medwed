@@ -30,10 +30,17 @@
     fill: #0091ff !important;
 }
 
+.map-modal-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .map-modal {
 	position: absolute;
-    top: 0;
+    top: 120px;
     width: 50%;
+    right: 0;
     background: #fff;
     padding: 65px 50px;
     border-radius: 10px;

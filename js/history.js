@@ -8,9 +8,9 @@ $(document).ready(function () {
         scroll1 = true;
         anime({
             targets: '.history-path',
-            strokeDashoffset: [2600, 0],
+            strokeDashoffset: [3360, 0],
             easing: 'easeInOutSine',
-            duration: 2000,
+            duration: 2500,
             delay: function (el, i) {
                 return i * 250
             },
@@ -56,9 +56,9 @@ $(document).ready(function () {
             scroll4 = true;
             anime({
                 targets: '.history-path-4',
-                strokeDashoffset: [2600, 0],
+                strokeDashoffset: [3080, 0],
                 easing: 'easeInOutSine',
-                duration: 2000,
+                duration: 2500,
                 delay: function (el, i) {
                     return i * 250
                 },

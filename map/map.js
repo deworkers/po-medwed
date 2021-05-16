@@ -21,14 +21,14 @@ $(document).ready(function() {
         $('#' + item.id).addClass('active');
     });
 
-    let getPos = function(pos) {
+    /*let getPos = function(pos) {
         let width = $(window).width();
         if ( pos > width / 2 ) {
             return 'left';
         } else {
             return 'right';
         }
-    };
+    };*/
 
     $('.elem.active').on('click', function(event) {
         let id = $(this).attr('id');
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
         $('.elem.active').removeClass('select');
 
-        $('.map-modal').removeClass('left', 'right');
+        //$('.map-modal').removeClass('left', 'right');
         
         $('.map-modal__title').text(obj.title);
         $('.map-modal__content').html(obj.content);
@@ -45,7 +45,7 @@ $(document).ready(function() {
             $('#' + id).addClass('select');
         }, 10);
 
-        $('.map-modal').show().addClass(getPos(event.clientX));
+        $('.map-modal').show()/*.addClass(getPos(event.clientX))*/;
     });
 
     $('.map-modal__close').on('click', function() {
