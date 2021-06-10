@@ -1,18 +1,21 @@
 .map {
     position: relative;
-    margin-top: -150px;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content--map {
+    position: relative;
 }
 
 .map svg {
     width: 100%;
     height: 1000px;
+    max-width: 1550px;
 }
 
-@media only screen and (max-width: 1400px) {
-    .map svg {
-        height: 720px;
-    }
-}
 
 .map .elem {
     transition: fill 0.3s;
@@ -26,34 +29,38 @@
     fill: #73c3ff !important;
 }
 
+.map .elem.active path {
+    fill: #73c3ff !important;
+}
+
+
 .map .elem.select {
     fill: #0091ff !important;
 }
 
+.map .elem.select path {
+    fill: #0091ff !important;
+}
+
+
 .map-modal-wrap {
-    max-width: 1180px;
-    margin: 0 auto;
-    position: relative;
+    width: 1180px;
+    position: absolute;
+    bottom: 0px;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    height: 940px;
 }
 
 .map-modal {
-	position: absolute;
-    top: 120px;
+	position: relative;
     width: 50%;
     right: 0;
     background: #fff;
     padding: 65px 50px;
     border-radius: 10px;
     box-shadow: 0 11px 30px rgb(208 208 208 / 50%);
-    display: none;
-}
-
-.map-modal.left {
-    left: 0;
-}
-
-.map-modal.right {
-    right: 0;
 }
 
 .map-modal__close {
@@ -99,4 +106,75 @@
 .map-modal__content li:after {
 	background: #ee861b;
     left: -18px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .map svg {
+        height: 720px;
+    }
+
+    .map-modal-wrap {
+        height: 720px;
+        width: 1024px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .map {
+        margin-top: 0px;
+        display: block;
+    }
+    
+    .map svg {
+        height: 440px;
+    }
+
+    .map-modal-wrap {
+        width: 100%;
+        padding: 0 70px;
+        position: relative;
+        height: auto;
+    }
+
+    .map-modal {
+        position: relative;
+        width: 100%;
+        padding: 60px 45px;
+    } 
+}
+
+@media only screen and (max-width: 765px) {
+    .map {
+        overflow-y: auto;
+        margin: 0 -30px !important;
+    }
+
+    .map svg {
+        height: 380px;
+        width: 660px;
+    }
+
+    .content--map {
+        padding: 40px 30px;
+    }
+
+    .map-modal-wrap {
+        padding: 0;
+    }
+
+    .map-modal {
+        padding: 30px 20px;
+    }
+
+    .map-modal__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+
+    .map-modal__content {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }

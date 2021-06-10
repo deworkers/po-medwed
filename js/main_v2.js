@@ -105,7 +105,7 @@ $(document).ready(function() {
 
     const review = new Swiper('.review-items', {
         // Optional parameters
-        loop: true,
+        loop: false,
 
         slidesPerView: 1,
         spaceBetween: 30,
@@ -130,8 +130,7 @@ $(document).ready(function() {
 
     const logos = new Swiper('.rewiew-logos', {
         // Optional parameters
-        loop: true,
-
+        loop: false,
         slidesPerView: 6,
         spaceBetween: 10,
         breakpoints: {
@@ -156,7 +155,7 @@ $(document).ready(function() {
     } else {  // для мобилки
         const services = new Swiper('.services-icons', {
             // Optional parameters
-            loop: true,
+            loop: false,
             slidesPerView: 1,
             spaceBetween: 25,
             navigation: {
