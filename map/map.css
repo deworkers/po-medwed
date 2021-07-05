@@ -6,6 +6,10 @@
     
 }
 
+.map--about {
+    margin: -100px 0 -100px
+}
+
 .content--map {
     position: relative;
 }
@@ -45,17 +49,15 @@
 
 .map-modal-wrap {
     width: 1180px;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    margin: 0 auto;
     display: none;
-    align-items: center;
-    justify-content: flex-end;
-    height: 940px;
 }
 
 .map-modal {
-	position: relative;
+    position: absolute;
     width: 50%;
+    bottom: 0px;
     right: 0;
     background: #fff;
     padding: 65px 50px;
@@ -117,6 +119,10 @@
         height: 720px;
         width: 1024px;
     }
+
+    .map--about {
+        margin: -50px 0 -20px;
+    }
 }
 
 
@@ -125,6 +131,25 @@
         margin-top: 0px;
         display: block;
     }
+
+    .map::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        scrollbar-color: #ee861b #fff9ed;
+    }
+
+    .map::-webkit-scrollbar-track {
+        background-color: #fff9ed;
+        border-radius: 100px;
+        margin: 0 20px;
+    }
+
+    .map::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        border-left: 0;
+        border-right: 0;
+        background-color: #ee861b;
+      }
     
     .map svg {
         height: 440px;
@@ -142,17 +167,26 @@
         width: 100%;
         padding: 60px 45px;
     } 
+
+    .map--about {
+        margin: -100px 0 -70px;
+    }
 }
 
 @media only screen and (max-width: 765px) {
     .map {
         overflow-y: auto;
-        margin: 0 -30px !important;
+        margin: -30px 0 40px;
+    }
+
+    .map--about {
+        margin: -60px 0 -20px;
     }
 
     .map svg {
         height: 380px;
         width: 660px;
+        padding: 0 20px;
     }
 
     .content--map {
