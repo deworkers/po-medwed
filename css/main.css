@@ -7,6 +7,10 @@ mark, .mark {
     padding: 0;
 }
 
+.grecaptcha-badge {
+	visibility: hidden;
+}
+
 .header {}
 
 .header-wrap {
@@ -621,6 +625,13 @@ mark, .mark {
     margin: 0 15px 50px;
 }
 
+.achiev-icon {
+    width: 20%;
+    margin: 0 2.5% 30px;
+}
+
+
+
 .services-icon__img {
     height: 215px;
     display: flex;
@@ -1043,6 +1054,7 @@ mark, .mark {
 
 .footer-menu .header-menu-one {
 	padding: 70px 0;
+    margin: 0px;
 }
 
 .footer-menu .header-menu-one > a {
@@ -1700,6 +1712,16 @@ mark, .mark {
         margin: 0;
         opacity: 1 !important;
     }
+
+    .achiev-icon {
+        padding: 30px 20px;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 0 11px 43px rgba(208, 208, 208, 0.5);
+        margin: 0;
+        opacity: 1 !important;
+        height: 290px;
+    }    
 
     .services-icon__img {
         height: auto;

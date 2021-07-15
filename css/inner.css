@@ -204,14 +204,16 @@ ul li:after {
 	display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .solution-list-one {
-	width: calc(25% - 15px);
+	width: calc(33%);
     padding: 0 15px 50px;
     text-decoration: none !important;
     color: #000;
+    display: flex;
+    align-items: center;
 }
 
 .solution-list-one:hover .solution-one-title {
@@ -219,20 +221,34 @@ ul li:after {
 }
 
 .solution-one-img {
-	margin-bottom: 20px;
+	margin-right: 10px;
+    width: 170px;
 }
 
 .solution-one-img img {
     margin: 0 0 0 auto;
 }
 
+.solution-one-right {
+    width: calc(100% - 180px);
+}
+
+
+
 .solution-one-title {
 	text-align: left;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: #000;
     text-decoration: none !important;
     transition: color 0.3s;
+    margin-bottom: 10px;
+}
+
+.solution-one-title-text {
+    font-size: 12px;
+    color: #000;
+    text-decoration: none !important;
 }
 
 .solution-top {
@@ -431,6 +447,42 @@ a.project-button:hover {
     color: #fff;
 }
 
+a.project-button-blue {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 26px 70px 26px 50px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 29px rgba(189, 157, 99, 0.8);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    width: auto;
+    margin: 0 auto 70px;
+    background: #0090ff;
+    color: #fff;
+}
+
+a.project-button-blue:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #38a8ff;
+}
+
+a.project-button-blue:before {
+    content: "";
+    background: url(../img/icons/right.svg);
+    width: 25px;
+    background-size: 25px;
+    height: 25px;
+    position: absolute;
+    top: 28px;
+    right: 25px;
+}
+
 .content-slider {
 	position: relative;
     padding: 20px 70px;
@@ -438,7 +490,7 @@ a.project-button:hover {
 }
 
 .content-slider-wrap {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 .content-slider-item {
@@ -446,9 +498,14 @@ a.project-button:hover {
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 11px 30px rgb(208 208 208 / 50%);
-    margin-bottom: 90px;
+    margin-bottom: 10px;
     opacity: 1;
     transition: all 0.2s;
+}
+
+.content-slider-arrow {
+    position: relative;
+    height: 55px;
 }
 
 .swiper-slide-prev,
@@ -962,6 +1019,7 @@ a.content-video:hover .content-video__title {
     margin: 0 auto;
     padding-top: 90px;
     position: relative;
+    margin-top: -40px;
 }
 
 .history-list {
@@ -1224,6 +1282,8 @@ a.content-video:hover .content-video__title {
 @media only screen and (max-width: 1400px) {
     .about-menu a {
     }
+
+    
 }
 
 .about-menu a:hover {
@@ -1313,6 +1373,10 @@ a.content-video:hover .content-video__title {
         line-height: 18px;
     }
 
+    .solution-list-one {
+        width: 50%;
+    }
+
     .excellence-one__title {
         font-size: 18px;
     }
@@ -1337,7 +1401,7 @@ a.content-video:hover .content-video__title {
 
     .content-slider-wrap {
         margin: 0 -25px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
 
     .content-slider-item {
@@ -1357,7 +1421,12 @@ a.content-video:hover .content-video__title {
     }
 
     .solution-one-img {
+        width: 120px;
         height: 120px;
+    }
+
+    .solution-one-right {
+        width: calc(100% - 130px);
     }
 
     .solution-one-title {
@@ -1643,13 +1712,17 @@ a.content-video:hover .content-video__title {
 
     .solution-list-one {
         padding: 0 0 20px;
-        width: calc(50% - 5px);
+        width: calc(100%);
     }
 
     .solution-one-img {
         width: 140px;
         height: auto;
         margin: 0 auto;
+    }
+
+    .solution-one-right {
+        width: calc(100% - 150px);
     }
 
     .solution-one-title {
@@ -1890,7 +1963,7 @@ a.content-video:hover .content-video__title {
 
     .get-partner-reasons {
         flex-wrap: wrap;
-        margin-bottom: 90px;
+        margin-bottom: 30px;
     }
     
     .get-partner-reason {
@@ -1924,6 +1997,11 @@ a.content-video:hover .content-video__title {
         z-index: 0;
         height: 1300px;
         margin-right: -4px;
+    }
+
+    .history-list-wrap {
+        padding-top: 0;
+        margin-top: 0;
     }
     
     .history-list:before {
