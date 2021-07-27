@@ -34,7 +34,12 @@ $(document).ready(function() {
     });
 
     setTimeout(function() {
-        $('.diag').css('height', $('body').height() + 5 + 'px');
+        if ( $('html, body').width() >= 500 ) {
+            $('.diag').css('height', $('body').height() + 5 + 'px');
+        } else {
+            $('.diag').css('height', $('body').height() - 530 + 'px');
+        }
+        
     }, 500);
 
     $("#bottom-form").validate({
@@ -54,6 +59,7 @@ $(document).ready(function() {
         },
         submitHandler: function (form) {
             // отправка
+            form.submit();
             $('.bottom-wrap').hide();
             $('.bottom-wrap--after').show();
         },
@@ -65,80 +71,102 @@ $(document).ready(function() {
     $("#modal-form").validate({
         errorElement: "em",
         rules: {
-            name: {
+            form_text_1: {
                 required: true
             },
-            email: {
+            form_text_2: {
                 required: true
             },
-            phone: {
+            form_text_3: {
                 required: true
             },
         },
         messages: {
-            name: {
+            form_text_1: {
                 required: "Введите ваше имя",
             },
-            email: {
+            form_text_2: {
                 required: "Введите email",
             },
-            phone: {
+            form_text_3: {
                 required: "Введите номер телефона",
             },
         },
         invalidHandler: function(form, validator) {
-            
+
         },
         submitHandler: function (form) {
             // отправка
+
+            form.submit();
             $('.modal-body').hide();
             $('.modal-body--after').show();
         },
         unhighlight: function (form) {
-            
+
         },
     });
 
     $("#bottom-form-alt").validate({
         errorElement: "em",
         rules: {
-            name: {
+            form_text_6: {
                 required: true
             },
-            email: {
+            form_text_7: {
                 required: true
             },
-            phone: {
+            form_text_8: {
                 required: true
             },
+            form_text_11: {
+                required: true
+            },
+            form_text_13: {
+                required: true
+            },
+            form_text_12: {
+                required: true
+            }
         },
         messages: {
-            name: {
+            form_text_6: {
                 required: "Введите ваше имя",
             },
-            email: {
+            form_text_7: {
                 required: "Введите email",
             },
-            phone: {
+            form_text_8: {
+                required: "Введите номер телефона",
+            },
+            form_text_11: {
+                required: "Введите ваше имя",
+            },
+            form_text_13: {
+                required: "Введите email",
+            },
+            form_text_12: {
                 required: "Введите номер телефона",
             },
         },
         invalidHandler: function(form, validator) {
-            
+
         },
         submitHandler: function (form) {
             // отправка
-            $('.bottom-form').hide();
+            form.submit();
+            $('.bottom-wrap').hide();
             $('.bottom-wrap--after').show();
         },
         unhighlight: function (form) {
-            
+
         },
     });
 
     const logos = new Swiper('.content-slider', {
         // Optional parameters
         loop: false,
+        centeredSlides: true,
         slidesPerView: 3,
         spaceBetween: 30,
         breakpoints: {
@@ -158,13 +186,37 @@ $(document).ready(function() {
         }
     });
 
+    const news = new Swiper('.news-slider', {
+        // Optional parameters
+        loop: false,
+        centeredSlides: false,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            760: {
+                slidesPerView: 2,
+            },
+            840: {
+                slidesPerView: 3,
+            }
+        },
+        navigation: {
+            nextEl: '.review-button-next',
+            prevEl: '.review-button-prev',
+        }
+    });
+
     $(document).on('click', '.select', function () {
-        $('.select-list').hide();
-        $(this).toggleClass('active');
+        $('.select').not(this).removeClass('active').find('.select-list').hide();
         if ($(this).hasClass('active')) {
-            $(this).find('.select-list').show();
-        } else {
+            $(this).toggleClass('active');
             $(this).find('.select-list').hide();
+        } else {
+            $(this).toggleClass('active');
+            $(this).find('.select-list').show();
         }
     });
 
@@ -176,16 +228,24 @@ $(document).ready(function() {
         $(this).parents('.select').removeClass('active');
         $(this).parents('.select').find('input').val(val);
         $(this).parents('.select').find('.select-field').text(text);
+        $('#set_proekt').click();
     });
 
-    $(document).mouseup(function (e) {
-        var container = $('.select-list');
-
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-            container.hide();
-            container.parents('.select').removeClass('active');
-        }
-    });
+    $('.lightbox').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom',
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+		
+	});
 
     try {
         ymaps.ready(function () {
@@ -198,7 +258,7 @@ $(document).ready(function() {
                 }, {
                     iconCaption: 'улица Энгельса, 36',
                     iconLayout: 'default#imageWithContent',
-                    iconImageHref: '../img/contacts/map-icon.png',
+                    iconImageHref: '/local/templates/mis/img/contacts/map-icon.png',
                     iconImageSize: [190, 51],
                     iconImageOffset: [-25, -51]
                 })
@@ -306,12 +366,15 @@ $(document).ready(function() {
                 clear();
             }, 1000);
         });
+
+        $('.footer-menu .header-menu-one').on('mouseenter', function() {
+            if ( !$(this).hasClass('mark') ) {
+                $('.footer-menu-inner').removeClass('menu-open');
+                clear();
+            }
+        });
     }
-
-
-
     
-    //tablet
     if (device() == 'tablet') {
         $('.header-menu-list .header-menu-one.mark').each(function() {
             $(this).children('a').after('<span class="more"></span>');
@@ -360,7 +423,6 @@ $(document).ready(function() {
 
     }
 
-
     if (device() == 'mobile') {
         $('.header-menu-list .header-menu-one.mark').each(function() {
             $(this).children('a').after('<span class="more"></span>');
@@ -399,6 +461,12 @@ $(document).ready(function() {
                 $(this).addClass('active').parent('.submenu-menu-one').addClass('active');
             }
         });
+
+        $('.svg-to-png').each(function() {
+            $(this).attr('src', $(this).data('img'));
+        });
     }
+
+    
 
 });

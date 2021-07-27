@@ -101,6 +101,10 @@ ul li:after {
     left: -15px;
 }
 
+ol li li {
+    list-style: none;
+}
+
 .breadcrumbs {
 	padding: 0 0 70px;
     display: flex;
@@ -213,7 +217,7 @@ ul li:after {
     text-decoration: none !important;
     color: #000;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .solution-list-one:hover .solution-one-title {
@@ -321,6 +325,10 @@ ul.mark-list li:before {
     transform: rotate(45deg);
 }
 
+ul.mark-list ul {
+    padding: 0px 0 0 25px;
+}
+
 .solution-functions {
 	display: flex;
     justify-content: center;
@@ -337,6 +345,10 @@ ul.mark-list li:before {
     border-radius: 30px;
     background: #fff;
     box-shadow: 0 11px 43px #d0d0d0;
+}
+
+.solution-function__descr p {
+    font-size: 14px;
 }
 
 .solution-function--2 .solution-function {
@@ -362,6 +374,7 @@ ul.mark-list li:before {
 .solution-function__title {
 	font-size: 20px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .excellence {
@@ -1373,6 +1386,12 @@ a.content-video:hover .content-video__title {
         line-height: 18px;
     }
 
+    .solution-function__descr p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+
     .solution-list-one {
         width: 50%;
     }
@@ -1388,7 +1407,12 @@ a.content-video:hover .content-video__title {
 
     a.project-button {
         font-size: 16px;
-        padding: 21px 50px;
+        padding: 21px 60px;
+    }
+
+    a.project-button-blue {
+        font-size: 16px;
+        padding: 21px 60px;
     }
 
     a.project-button.project-button--getmap {
@@ -1396,6 +1420,10 @@ a.content-video:hover .content-video__title {
     }
 
     a.project-button:before {
+        top: 21px;
+    }
+
+    a.project-button-blue:before {
         top: 21px;
     }
 
@@ -1688,7 +1716,7 @@ a.content-video:hover .content-video__title {
     }
 
     .breadcrumbs a {
-        margin-right: 8px;
+        margin-right: 5px;
     }
 
     .breadcrumbs span {
@@ -1718,7 +1746,6 @@ a.content-video:hover .content-video__title {
     .solution-one-img {
         width: 140px;
         height: auto;
-        margin: 0 auto;
     }
 
     .solution-one-right {
@@ -1774,6 +1801,10 @@ a.content-video:hover .content-video__title {
         margin-bottom: 10px;
     }
 
+    .solution-function__descr p {
+        font-size: 12px;
+    }
+
     .solution-function__descr ul {
         font-size: 12px;
     }
@@ -1811,6 +1842,16 @@ a.content-video:hover .content-video__title {
         margin-bottom: 75px;
     }
 
+    a.project-button-blue {
+        width: 100%;
+        font-size: 14px;
+        padding: 24px 50px 25px 25px;
+        border-radius: 45px;
+        margin-bottom: 75px;
+    }
+
+
+
     a.project-button:after {
         margin-left: 10px;
         position: relative;
@@ -1821,6 +1862,11 @@ a.content-video:hover .content-video__title {
     }
 
     a.project-button:before {
+        top: 50%;
+        margin-top: -13px;
+    }
+
+    a.project-button-blue:before {
         top: 50%;
         margin-top: -13px;
     }
@@ -2153,8 +2199,68 @@ a.content-video:hover .content-video__title {
 
 @media only screen and (max-width: 360px) {
     .solution-one-img {
-        width: 120px;
+        width: 100px;
         height: auto;
     }
 
+    .solution-one-right {
+        width: calc(100% - 110px);
+    }
 }
+
+
+.news-date {
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.news-date span {
+    display: inline-block;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.news-slider-wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.news-slider {
+    padding: 30px 70px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.news-slider .review-button-next,
+.news-slider .review-button-prev {
+    top: 50%;
+    margin-top: -25px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .news-slider .review-button-next,
+    .news-slider .review-button-prev {
+        top: auto;
+        bottom: 35px;
+    }
+
+    .news-slider {
+        padding: 25px 25px 130px;
+    }
+}
+
+.news-slider-item {
+    opacity: 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+blockquote {
+    background: #F7F9FA;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+
